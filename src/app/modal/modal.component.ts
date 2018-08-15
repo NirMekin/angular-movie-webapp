@@ -17,6 +17,7 @@ export class ModalComponent implements OnInit {
   private title;
   private main;
   private info;
+  private links;
   private others;
   private image;
   private closeResult: string;
@@ -28,6 +29,7 @@ export class ModalComponent implements OnInit {
        this.main = data.main;
        this.title = data.title;
        this.info = data.info;
+       this.links = data.links;
        this.image = "/assets/" + data.image;
     })
   }

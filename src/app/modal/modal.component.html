@@ -14,12 +14,9 @@
                   <span aria-hidden="true">&times;</span>
                 </button>
               </div>
-              <div class="modal-body">
-                <h6>
-                  Staring: {{info.stars}}
-                </h6>
-                <h6>
-                  Directed By: {{info.director}}
+              <div class="modal-body" >
+                <h6 *ngFor="let header of info">
+                  {{header}}
                 </h6>
                 <hr/>
                 <div class="imageModal">
@@ -30,8 +27,8 @@
                 </article>
                
                 <div class="generModalMovie">
-                    <div *ngFor="let gener of info.geners" >
-                        <a routerLink="/search/{{gener}}" (click)="d('Cross click')">{{gener}}</a>
+                    <div *ngFor="let link of links" >
+                        <a routerLink="/search/{{link}}" (click)="d('Cross click')">{{link}}</a>
                     </div>
                 </div>
                 

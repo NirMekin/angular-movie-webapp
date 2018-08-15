@@ -19,11 +19,11 @@ export class ModalService {
                                 let tempData = data.filter( movie => movie.name === key)[0]
                                 let movieModalData = {
                                   title : tempData.name,
-                                  info : {
-                                    stars : tempData.stars,
-                                    director : tempData.director,
-                                    geners : tempData.geners
-                                  },
+                                  info :[
+                                    "Stars: " + tempData.stars,
+                                    "Directed by: " + tempData.director  
+                                  ],
+                                  links : tempData.geners,
                                   main : tempData.desc,
                                   image : tempData.poster
                                 }

@@ -1,3 +1,6 @@
+//  not in use any more need to delete!!!
+//  only modal.component is rendreing
+
 import { Component, OnInit } from '@angular/core';
 import { Input } from '@angular/core/';
 import {NgbModal, ModalDismissReasons} from '@ng-bootstrap/ng-bootstrap';
@@ -19,7 +22,7 @@ export class ModalMovieComponent implements OnInit {
 
   ngOnInit(){
     //assign src url of the current movie poster
-    // this.imageUrl = "/assets/" + this.others.imageUrl;
+    this.imageUrl = "/assets/" + this.others.imageUrl;
   }
   open(content) {
     this.modalService.open(content, {ariaLabelledBy: 'modal-basic-title'}).result.then((result) => {
