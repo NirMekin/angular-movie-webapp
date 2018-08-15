@@ -1,0 +1,26 @@
+<div class="tileMoviesContainer">
+  <div [ngStyle] = "styleObj">{{data.name}}</div>
+  <div [ngStyle] = "styleObj">
+      <div  *ngFor="let gener of data.geners" class="tileLinkWrapper">
+          <a class="tileLink" routerLink="/search/{{gener}}" >{{gener}}</a>
+      </div>
+  </div>
+  <div [ngStyle] = "styleObj">{{data.rate.rate}}<span style="font-size:75%">/10</span></div>
+  <div [ngStyle] = "styleObj">{{data.release}}</div>
+  <div [ngStyle] = "styleObj">{{data.earning}}</div>
+  <div [ngStyle] = "styleObj">
+      <app-modal  [type]="'movie'"
+                  [title]="data.name"
+                  [main]="data.desc"
+                  [info]="{
+                      stars: data.stars,
+                      director: data.director,
+                      rate : data.rate,
+                      genres : data.geners
+                    }"
+                  [others]="{
+                    imageUrl : data.poster
+                  }">
+       </app-modal>
+  </div>
+</div>

@@ -1,0 +1,10 @@
+<div id="tileHeader">
+  <h3>Title</h3>
+  <h3>Geners</h3>
+  <h3>Rating</h3>
+  <h3>Release</h3>
+  <h3>Earning</h3>
+</div>
+<div *ngFor="let movie of movies">
+    <app-tile [data]="movie" [type]="'movie'" ></app-tile>
+</div>

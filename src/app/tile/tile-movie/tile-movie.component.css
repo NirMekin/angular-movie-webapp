@@ -1,0 +1,29 @@
+.tileMoviesContainer{
+   width:90%;
+   height: 30px;
+   margin: 1%;
+   clear: both;
+   box-shadow: 2px 2px 5px gray;
+   display: flex;
+   align-items: stretch;
+}
+
+.tileMoviesContainer div{
+   display:inline-block;
+   height: 100%;
+   width:18%;
+   white-space: nowrap;
+   overflow: hidden !important;
+   text-overflow: ellipsis;    
+}
+
+.tileMoviesContainer .tileLink{
+    color: rgb(115, 201, 57);
+    font-size: 70%;
+
+}
+
+.tileLinkWrapper{
+    width:20% !important;
+    cursor: pointer;
+}

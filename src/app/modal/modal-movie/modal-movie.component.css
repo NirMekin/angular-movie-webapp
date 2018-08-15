@@ -1,0 +1,20 @@
+.posterModalMovies img{
+    width:120px;
+}
+
+.posterModalMovies{
+    float: right;
+    margin: 10px;
+}
+
+.generModalMovie{
+    position: absolute;
+    bottom:10px;
+}
+
+.generModalMovie div{
+    float: left;
+    margin: 5px;
+    color: rgb(99, 137, 241);
+    cursor: pointer;
+}

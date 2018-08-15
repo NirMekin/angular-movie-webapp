@@ -1,0 +1,47 @@
+{"movies" : [
+    {
+        "name" : "Avengers: Infinity War (2018)",
+        "rate" : {
+            "voted" : 444114,
+            "rate" : 8.6
+        },
+        "desc": "The Avengers and their allies must be willing to sacrifice all in an attempt to defeat the powerful Thanos before his blitz of devastation and ruin puts an end to the universe.",
+        "stars":"Robert Downey Jr., Chris Hemsworth, Mark Ruffalo",
+        "director" :  "Anthony Russo, Joe Russo",
+        "length" : "2h 29min",
+        "geners": [ "Action", "Adventure", "Fantasy" ],
+        "release": "27 April 2018 (USA)",
+        "poster":"movies_assets/avengers3-poster.jpg",
+        "earning":"$659,325,379, 10 December 2017"
+    },
+    {
+        "name" : "Titanic (1997)",
+        "rate" : {
+            "voted" : 904181,
+            "rate" : 7.8
+        },
+        "desc": "A seventeen-year-old aristocrat falls in love with a kind but poor artist aboard the luxurious, ill-fated R.M.S. Titanic.",
+        "stars": "Leonardo DiCaprio, Kate Winslet, Billy Zane",
+        "director" : "James Cameron",
+        "length" : "3h 14min",
+        "geners": [ "Drama", "Romance" ],
+        "release": "19 December 1997 (USA)",
+        "poster":"movies_assets/titanic-poster.jpg",
+        "earning":"$459,325,379, 8 December 1999"
+    },
+    {
+        "name" : "The Godfather (1972)",
+        "rate" : {
+            "voted" : 1357920,
+            "rate" : 9.2
+        },
+        "desc": "The aging patriarch of an organized crime dynasty transfers control of his clandestine empire to his reluctant son.",
+        "stars":"Marlon Brando, Al Pacino, James Caan",
+        "director" :  "Anthony Russo, Joe Russo",
+        "length" : "2h 55min",
+        "geners": [ "Crime", "Drama"],
+        "release": "24 March 1972 (USA)",
+        "poster":"movies_assets/godfather-poster.jpg",
+        "earning":"$759,325,379, 11 December 2015"
+    }
+]}

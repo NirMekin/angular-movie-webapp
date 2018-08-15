@@ -1,0 +1,16 @@
+.nav-container{
+    width:100%;
+    padding: 10px;
+    background: rgb(58, 55, 55);
+}
+
+.nav-container div {
+    display: flex;
+    margin: auto;
+    flex-grow: 1;
+}
+.nav-container div button {
+    align-items: flex-end;
+    margin: 0 1%;
+    width: 150px;
+}

@@ -1,0 +1,10 @@
+#tileHeader{
+    width:90%;
+    clear: both;
+    margin: auto;
+}
+
+#tileHeader h3{
+    float: left;
+    width:16.5%;
+}
