@@ -2,7 +2,7 @@ import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 
 
-import { Movie } from './movie';
+import { Movie , MovieMetadat } from './movie';
 import { Observable } from 'rxjs/internal/Observable';
 
 
@@ -21,13 +21,13 @@ export class SearchService {
   //           .then(response => response.json().movies.filter( i => i.gener = gener) as Movie[])
   // }
 
-  getMoviesByGener(gener): Observable<Movie[]>{
-    return this.http.get<Movie[]>("../../assets/movie_api/movies.json");
+  getMoviesByGener(gener): Observable<MovieMetadat[]>{
+    return this.http.get<MovieMetadat[]>("../../assets/movie_api/movies-metadata.json");
   }
 
 
-  getMoviesByName(name): Observable<Movie[]>{
-    return this.http.get<Movie[]>("../../assets/movie_api/movies.json");
+  getMoviesByName(name): Observable<MovieMetadat[]>{
+    return this.http.get<MovieMetadat[]>("../../assets/movie_api/movies-metadata.json");
   }
   
 }
