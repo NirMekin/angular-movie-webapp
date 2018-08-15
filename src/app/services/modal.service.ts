@@ -21,7 +21,8 @@ export class ModalService {
                                   title : tempData.name,
                                   info : {
                                     stars : tempData.stars,
-                                    director : tempData.director
+                                    director : tempData.director,
+                                    geners : tempData.geners
                                   },
                                   main : tempData.desc,
                                   image : tempData.poster
