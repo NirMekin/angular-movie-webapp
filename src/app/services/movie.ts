@@ -13,3 +13,11 @@ export interface Movie{
     poster: string;
     earning:string;
 }
+
+export interface MovieMetadat{
+    name : string,
+    rate :  number;
+    geners: string[];
+    release: string;
+    earning:  string;
+}

@@ -1,0 +1,23 @@
+{"movies" : [
+    {
+        "name" : "Avengers: Infinity War (2018)",
+        "rate" : 8.6,
+        "geners": [ "Action", "Adventure", "Fantasy" ],
+        "release": "27 April 2018 (USA)",
+        "earning":"$659,325,379, 10 December 2017"
+    },
+    {
+        "name" : "Titanic (1997)",
+        "rate" :  7.8,
+        "geners": [ "Drama", "Romance" ],
+        "release": "19 December 1997 (USA)",
+        "earning":"$459,325,379, 8 December 1999"
+    },
+    {
+        "name" : "The Godfather (1972)",
+        "rate" : 9.2,
+        "geners": [ "Crime", "Drama"],
+        "release": "24 March 1972 (USA)",
+        "earning":"$759,325,379, 11 December 2015"
+    }
+]}
