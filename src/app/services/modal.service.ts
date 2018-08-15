@@ -12,7 +12,6 @@ export class ModalService {
   constructor(private moviesService : MoviesService , private http : HttpClient) { }
 
   extractDataByType(type , key):Observable<any>{
-    console.log(type,key)
     switch(type){
       case 'movie' : return this.http.get("../../assets/movie_api/movies.json")
                             .pipe(
@@ -27,7 +26,6 @@ export class ModalService {
                                   main : tempData.desc,
                                   image : tempData.poster
                                 }
-                                console.log(movieModalData.image)
                                 return movieModalData;
                               })
                             )
