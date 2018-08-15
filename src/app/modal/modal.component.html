@@ -1,7 +1,60 @@
-<div *ngIf="type === 'movie'">
-  <app-modal-movie  [title]="title"
-                    [main]="main"
-                    [info]="info"
-                    [others]="others">
-  </app-modal-movie>
-</div>
+<button  class="btn btn-outline-secondary btn-sm" (click)="open(content)" style="width:100%;">Show More</button>
+
+<div class="modal" tabindex="-1" role="dialog" >
+    <div class="modal-dialog" role="document"  >
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title"></h5><ng-template #content let-c="close" let-d="dismiss">
+              <div class="modal-header">
+                <h4 class="modal-title" id="modal-basic-title" (click)="saveHisotry(dataObj.title)">
+                  {{title}}
+                </h4>
+              
+                <button type="button" class="close" aria-label="Close" (click)="d('Cross click')">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <h6>
+                  Staring: {{info.stars}}
+                </h6>
+                <h6>
+                  Directed By: {{info.director}}
+                </h6>
+                <hr/>
+                <div class="imageModal">
+                  <img [src]="image" />
+                </div>
+                <article>
+                    {{main}}
+                </article>
+               
+                <div class="generModalMovie">
+                    <!-- <div *ngFor="let gener of info.genres" >
+                        <a routerLink="/search/{{gener}}" (click)="d('Cross click')">{{gener}}</a>
+                    </div> -->
+                </div>
+                
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-outline-primary" (click)="d('Cross click')" >CLOSE</button>
+              </div>
+            </ng-template>
+            
+            
+            <hr>
+            
+            <pre>{{closeResult}}</pre>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Save changes</button>
+        </div>
+      </div>
+    </div>
+  </div>

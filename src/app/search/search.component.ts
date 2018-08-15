@@ -13,14 +13,15 @@ export class SearchComponent implements OnInit {
 
   private searchData = [];
   private searchInput : string = "";
+
   ngOnInit() {
+    //search also can call with param (in our case gener)
+    //in case there is a gener method 
     this.activatedRouter.params.subscribe((params: Params) => {
       let gener = params['gener']
       if(gener){
         this.searchService.getMoviesByGener(gener)
-        .subscribe( data => {
-          this.searchData = data.movies.filter(i => i.geners.includes(gener));
-        })
+        .subscribe( data => {this.searchData = data;})
       }
     })
       
@@ -31,9 +32,7 @@ export class SearchComponent implements OnInit {
   searchMovie(){
     if(this.searchInput.length > 0)
     this.searchService.getMoviesByName(this.searchInput)
-    .subscribe(data => {
-      this.searchData = data.movies.filter(i => i.name.indexOf(this.searchInput) !== -1 )
-    })
+    .subscribe(data => {this.searchData = data; })
   }
 
 }

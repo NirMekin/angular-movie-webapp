@@ -1,4 +1,4 @@
-{"movies" : [
+[
     {
         "name" : "Avengers: Infinity War (2018)",
         "rate" : 8.6,
@@ -20,4 +20,4 @@
         "release": "24 March 1972 (USA)",
         "earning":"$759,325,379, 11 December 2015"
     }
-]}
+]

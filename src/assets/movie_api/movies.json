@@ -1,4 +1,4 @@
-{"movies" : [
+[
     {
         "name" : "Avengers: Infinity War (2018)",
         "rate" : {
@@ -44,4 +44,4 @@
         "poster":"movies_assets/godfather-poster.jpg",
         "earning":"$759,325,379, 11 December 2015"
     }
-]}
+]

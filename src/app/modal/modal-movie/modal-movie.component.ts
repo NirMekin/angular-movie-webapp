@@ -19,7 +19,7 @@ export class ModalMovieComponent implements OnInit {
 
   ngOnInit(){
     //assign src url of the current movie poster
-    this.imageUrl = "/assets/" + this.others.imageUrl;
+    // this.imageUrl = "/assets/" + this.others.imageUrl;
   }
   open(content) {
     this.modalService.open(content, {ariaLabelledBy: 'modal-basic-title'}).result.then((result) => {

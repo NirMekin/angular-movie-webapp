@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { MoviesService} from '../services/movies.service'
-import { Movie } from '../services/movie'
+import { Movie , MovieMetadat } from '../services/movie'
 
 @Component({
   selector: 'app-home',
@@ -9,7 +9,7 @@ import { Movie } from '../services/movie'
 })
 export class HomeComponent implements OnInit {
 
-  private movies : Movie[] = [];
+  private movies : MovieMetadat[] = [];
 
   constructor( private moviesService : MoviesService) { }
 
